@@ -3,14 +3,15 @@ import Form from './Form'
 
 export default function DisplayTodos(props) {
   return (
-    <div>DisplayTodos
+    <div>
+        <h3>DisplayTodos</h3>
         {props.todos.map((item) => (
             <div key={item.id}>
-                {item.title}
-                {item.description}
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
             </div>
         ))}
-        <Form />
+        <Form todos={props}/>
     </div>
   )
 }
