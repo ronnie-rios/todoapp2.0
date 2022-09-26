@@ -12,9 +12,8 @@ export default function Form() {
     return (
         <form className='form' onChange={formHandler}>
             <input type="text" name='title' placeholder='title' />
-            <input type="text" name='body' placeholder='enter a brief description' />
+            <input type="text" name='body' placeholder='description' />
             <button>Submit</button>
-        </form>
-        
+        </form>   
   )
 }
